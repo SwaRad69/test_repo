@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        /* .box:first-child {
+            background-color: red;
+            color: aliceblue;
+        } */
+        /* .box:nth-child(even) {
+            background-color: red;
+            color: aliceblue;
+        } */
+        
+        .boxes * {
+            border: 2px solid black;
+        }
+        .boxes::before{
+            content: "LOL";
+        }
+        .boxes::after{
+            content: "lol";
+            background-color:red;
+            display: block;
+        }
+        ::selection{
+            color: white;
+            background-color:black;
+        }
+        .box::first-letter{
+            font-size: 40px;
+        }
+
+        /* .box::nth-child(even) */
+
+        /* {
+      background-color:red;
+      color: white;
+
+    } */
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perferendis fugiat odit atque
+            vitae. Eos ipsa consectetur quos illo fugit! Facilis dolorum consequatur quod nisi? Explicabo, voluptatem
+            nemo. Minima, adipisci.</div>
+        <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, maiores saepe, quisquam
+            voluptate nihil consectetur quae, placeat et tempore similique ad beatae facere praesentium doloribus
+            molestiae tempora soluta officia a.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. At illum officiis laboriosam libero
+            quos numquam quae doloremque voluptatibus, tenetur voluptas magnam vel quaerat soluta eveniet iste
+            consequatur reiciendis temporibus corporis voluptatem cupiditate assumenda autem incidunt id. Ipsa, repellat
+            minus reiciendis, ad cumque repellendus quibusdam dolorum facere excepturi neque suscipit! Quo, dolorem in.
+            Eum praesentium dolore provident corrupti natus sed nostrum culpa, eius earum odio quas error illo quam aut
+            iure neque, in commodi possimus ratione, est ut accusamus perspiciatis sequi!
+            Quis rem qui nisi assumenda accusamus fuga corporis ad voluptate optio laborum velit eum, quisquam excepturi
+            perspiciatis autem itaque. Qui officia amet quidem fugit nulla accusantium cumque rem molestiae reiciendis
+            excepturi minima magnam, quibusdam magni recusandae ducimus odio impedit sed explicabo numquam accusamus
+            nobis! Repellat eveniet corporis voluptates rerum error modi quis cum labore, ipsa id reprehenderit quasi,
+            ratione maxime animi fugit eum debitis doloremque? Eaque quis esse nihil recusandae, exercitationem quasi
+            sapiente animi, corrupti pariatur magni beatae? Soluta, provident!
+            Fuga tempore sunt itaque, dolorum vitae ipsam quis ex nihil, rerum provident, repellendus cumque fugit modi
+            dicta tempora deserunt optio recusandae cupiditate aspernatur deleniti fugiat minus odit ut distinctio.
+            Nobis perspiciatis iste sapiente ducimus odio nihil maiores officiis debitis esse laborum facilis
+            temporibus, cum atque eum blanditiis itaque enim earum soluta distinctio explicabo unde ratione ea ut. Odit,
+            voluptates? Iste, neque sed repudiandae explicabo doloremque sunt quibusdam dolor mollitia? Quo dolor
+            placeat dolorum odit non iusto, culpa officiis consequatur iste!</div>
+            <input type="text" placeholder="lol">
+    </div>
+
+</body>
+
+</html>

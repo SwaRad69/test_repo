@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            border: 5px solid #000;
+            background-color: #fff;
+            margin: 0;
+            padding: 23px;
+            
+        }
+        .childcontainer{
+            width: 50vw;
+            height: 50vh;
+            border: 2px solid red;
+            background-color:pink;
+            margin: 0;padding: 23px;
+
+
+        }
+        .child{
+            width: 25vw;
+            height: 25vh;
+            border: 2px solid blue;
+            background-color: black;
+            color: white;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="childcontainer">
+            <div class="child">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </section>
+        </span>
+    </div>
+    <script>
+        document.querySelector(".child").addEventListener("click",(e)=>{
+            e.stopImmediatePropagation()
+            alert("Clicked");
+        })
+        document.querySelector(".childcontainer").addEventListener("click",(e)=>{
+            e.stopImmediatePropagation()
+            alert("Clicked lavla");
+        })
+        document.querySelector(".container").addEventListener("click",(e)=>{
+            e.stopImmediatePropagation()
+            alert("bkl");
+        })
+        
+
+
+
+
+
+    </script>
+</body>
+</html>

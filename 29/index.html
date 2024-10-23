@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            height: 80vh;
+            width 40vw;
+            background-color: aqua;
+           
+
+
+        }
+        .box{
+            width:12px;
+            height: 32px;
+            /* display: grid; */
+            background-color: beige;
+            animation-name: LOL;
+            animation-duration: 1s;
+            /* animation-delay: 1ms; */
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate-reverse; */
+/* animation-play-state:paused ; */
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+        }
+        @keyframes LOL {
+            from{
+
+            }
+            to{
+                transform: translateX(200px);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .container{
+            box-sizing: border-box;
+            background-color: blue;
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        .ball{
+            background: red;
+            /* border-radius: 32px; */
+            width: 71px;
+            height: 71px;
+            border-radius:40px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation-name: bounce_ball;
+            animation-direction: alternate;
+            animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            /* animation-timing-function: linear; */
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+/* 
+        @keyframes bounce_ball{
+            
+                transform: translateX(100vw);
+           
+        }
+        @keyframes y_bounce_ball{
+
+        } */
+        @keyframes bounce_ball{
+            0% {
+                transform: translate(0, 0);
+            }
+            20% {
+                transform: translate(0, -50vh);
+            }
+            40% {
+                transform: translate(0, -25vh);
+            }
+            60% {
+                transform: translate(0, -50vh);
+            }
+            80% {
+                transform: translate(0, -25vh);
+            }
+            100% {
+                transform: translate(100vw, 0);
+            }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball">
+            
+        </div>
+    </div>
+    
+</body>
+</html>

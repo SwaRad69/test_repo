@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>.bulb {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        border-radius: 50%;
+        margin: 20px auto;
+        transition: box-shadow 2s ease;
+    }
+    
+    .glow {
+        box-shadow: 0 0 20px 10px yellow;
+    }
+    
+    button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="bulb"></div>
+<button id="toggle">Toggle Glow</button>
+<script>document.getElementById('toggle').addEventListener('click', function() {
+    document.querySelector('.bulb').classList.toggle('glow');
+});
+</script>
+</body>
+</html>

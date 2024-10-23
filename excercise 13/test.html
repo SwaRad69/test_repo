@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cards_container {
+            display: flex;
+        }
+        .card {
+            width: 200px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="cards_container">
+
+    </div>
+   
+    <script>
+        function cardmaker(Title, cName, views, monthsOld, duration) {
+            // Get the container for the cards
+            let container = document.getElementsByClassName("cards_container")[0];
+
+            // Create the card div
+            let card = document.createElement("div");
+            card.className = "card";
+
+            // Create the image element
+            let img = document.createElement("img");
+            img.src = "https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB0alxLSXCSEPITzWr-XXUiv1oglQ"; // You can dynamically set the image URL if needed
+
+            // Create the title element
+            let title = document.createElement("h2");
+            title.textContent = Title;
+
+            // Create the channel name element
+            let channelName = document.createElement("p");
+            channelName.textContent = "Channel: " + cName;
+
+            // Create the views element
+            let viewsText = document.createElement("p");
+            viewsText.textContent = "Views: " + views;
+
+            // Create the months old element
+            let monthsText = document.createElement("p");
+            monthsText.textContent = monthsOld + " months ago";
+
+            // Create the duration element
+            let durationText = document.createElement("p");
+            durationText.textContent = "Duration: " + duration;
+
+            // Append all elements to the card
+            card.appendChild(img);
+            card.appendChild(title);
+            card.appendChild(channelName);
+            card.appendChild(viewsText);
+            card.appendChild(monthsText);
+            card.appendChild(durationText);
+
+            // Append the card to the cards_container
+            container.appendChild(card);
+        }
+
+        // Example usage of the function
+        cardmaker("Sample Video Title", "Sample Channel", "1M", 3, "10:25");
+    </script>
+    
+</body>
+</html>

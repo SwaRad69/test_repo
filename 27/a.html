@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 120px 100px 100px;
+            grid-template-rows: 120px 100px 100px;
+            grid-template-areas: "nav nav nav"
+                "side art art"
+                "f f f";
+            gap: 2px;
+        }
+
+        .items {
+            border: 2px solid red;
+            /* width: 55px; */
+            height: 55px;
+        }
+
+        .item1 {
+            background-color: aqua;
+            grid-area: nav;
+
+
+        }
+
+        .item2 {
+            grid-area: side;
+            background-color: beige;
+        }
+
+        .item3 {
+            grid-area: art;
+            background-color: rgb(255, 154, 3);
+
+        }
+
+        .item4 {
+            grid-area: f;
+        }
+
+        .item5 {}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items item1">1</div>
+        <div class="items item2">2</div>
+        <div class="items item3">3</div>
+        <div class="items item4">4</div>
+        <div class="items item5">5</div>
+    </div>
+
+</body>
+
+</html>
